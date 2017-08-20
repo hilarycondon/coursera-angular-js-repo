@@ -1,0 +1,9 @@
+.message {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #30B41D;
+}
+
+.message > .error {
+  color: #E74C3C;
+}
