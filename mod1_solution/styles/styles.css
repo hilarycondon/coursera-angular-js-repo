@@ -7,3 +7,12 @@
 .message > .error {
   color: #E74C3C;
 }
+
+#lunch-menu {
+  width:90%;
+}
+
+.note {
+  font-style: italic;
+  font-size: 1em;
+}

@@ -18,7 +18,7 @@
            </label>
              <input id="lunch-menu" type="text"
              placeholder="List comma-separated items that you usually have for lunch"
-             class="form-control" style="width:90%;" ng-model = "lunchItems"/>
+             class="form-control" style="{{messageStyle}}" ng-model = "lunchItems"/>
 
          </div>
          <div class="form-group">
@@ -28,6 +28,7 @@
            <p class = "error">{{errorMessage}}</p>
            <p>{{message}}</p>
          </div>
+         <p class = "note"> Empty values and commas are not included in count </p>
    </div>
 
 </body>
