@@ -1,0 +1,32 @@
+.glyphicon-shopping-cart {
+  color: #36CEB8;
+  margin-top:6px;
+}
+
+.emptyMessage {
+  font-weight: bold;
+  color: #E74C3C;
+  font-size: 1.45em;
+
+}
+li {
+  font-size: 1.3em;
+  line-height: 1.7em;
+  margin-bottom:10px;
+}
+
+.list-group > li > button {
+  background-color: #fff;
+  color:#4d4d4d;
+  border:1px solid  #39B781;
+}
+
+.list-group > li > button:hover {
+  background-color: #39B781;
+  color:#fff;
+  border:1px solid  #39B781;
+}
+* {
+  font-family: 'Roboto', sans-serif;
+  color: #4d4d4d;
+ }
