@@ -1,37 +1,15 @@
-## Welcome to GitHub Pages
+---
+author: Hilary Condon
+last updated: 2017-09-02
+---
 
-You can use the [editor on GitHub](https://github.com/hilarycondon/coursera-angular-js-repo/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+# [](#single-page-web-apps-with-angular-js-course-repo)Single Page Web Apps with Angular JS Course Repo
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This is a repository to store work completed as part of the [Single Page Web Apps with Angular JS Course Repo](https://www.coursera.org/learn/html-css-javascript-for-web-developers) course offered by Johns Hopkins University through Coursera. 
 
-### Markdown
+## [](#assignments)Assignments
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hilarycondon/coursera-angular-js-repo/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+| Module       | Path to Assignment | Path to README.md |
+|:-------------|:-------------------|:------------------|
+| 1           | [Module 1 Assignment](https://hilarycondon.github.io/coursera-angular-js-repo/mod1_solution/) | [Module 1 README.md](https://github.com/hilarycondon/coursera-angular-js-repo/blob/master/mod1_solution/README.md)  |
+| 2            | [Module 2 Assignment](https://hilarycondon.github.io/jhu-coursera-dev/mod3_solution/) | [Module 2 README.md](https://github.com/hilarycondon/coursera-angular-js-repo/blob/master/mod2_solution/README.md)  |
