@@ -1,0 +1,13 @@
+<ul id = "foundItemsList" class = "list-group">
+  <li ng-repeat = "item in narrowDown.items" class = "list-group-item">
+  <button ng-click = "onRemove(index);" type = "button" class = "btn btn-danger pull-right">
+    <span class = "glyphicon glyphicon-trash"></span>
+    Don't want this one!
+  </button>
+  <span class = "label label-success"> {{item.short_name}}</span>
+  <span class = "item-name"> {{item.name}}</span>
+  <br>
+  <span class = "item-description">{{item.description}}</span>
+    </li>
+</ul>
+<!-- <div ng-show="foundItems.isEmpty();" class="alert alert-danger" role="alert">{{ message }}</div> -->
