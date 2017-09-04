@@ -1,34 +1,38 @@
 <!doctype html>
-<html lang="en" ng-app="NarrowItDownApp">
+<html ng-app = "NarrowItDownApp">
   <head>
-    <meta charset="utf-8">
-    <title>Narrow Down Your Menu Choice</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset = "utf-8">
+    <title> Narrow Down Menu Choices</title>
+    <meta name = "viewport" content = "width =device-width, initial-scale =1">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/angular.min.js"></script>
     <script src="app/app.js"></script>
-    <script src="app/constants.js"></script>
-    <script src="app/menusearch.service.js"></script>
-    <script src="app/narrowItDownController.js"></script>
-    <script src="app/foundItems/founditems.directive.js"></script>
-    <script src="app/loader/loader.directive.js"></script>
   </head>
-<body>
-   <div class="container" ng-controller="NarrowItDownController as narrowDown">
-    <h1>Narrow Down Your Chinese Menu Choice</h1>
-
-    <div class="form-group">
-      <input type="text" placeholder="search term" class="form-control" ng-model = "narrowDown.searchTerm">
+  <body>
+    <div class ="container" ng-controller = "NarrowItDownController as narrowDown">
+      <header class = "row" style  = "border-bottom: solid 1px #ccc;">
+          <h1 class = "navbar-brand" style = "font-size: 1.95em;">
+            Narrow Down Your Chinese Menu Choice
+          </h1>
+        </header>
+      <div class = "form-group">
+        <input type = "text" placeholder = "Enter term to search menu" class = "form-control" ng-model ="narrowDown.searchTerm">
+      </div>
+      <div class = "form-group narrow-button">
+        <button class ="btn btn-info" ng-click = "narrowDown.narrowItems();">
+          Narrow It Down For Me!
+        </button>
     </div>
-    <div class="form-group narrow-button">
-      <button class="btn btn-primary" ng-click = "narrowDown.narrowItems();">Narrow It Down For Me!</button>
+      <div class = "row">
+      </div>
+      <loader  ng-show= "narrowDown.loading" ></loader>
+      <found-items
+        ng-show = "!narrowDown.loading"
+        found = "narrowDown.found"
+        message = "narrowDown.message"
+        on-remove = "narrowDown.removeMenuItem(index)">
+      </found-items>
     </div>
-    <found-items
-      found="narrowDown.found"
-      on-remove="narrowDown.removeMenuItem(index)">
-    </found-items>
-  </div>
-
-</body>
+  </body>
 </html>
