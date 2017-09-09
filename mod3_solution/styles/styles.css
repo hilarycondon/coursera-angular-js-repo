@@ -1,12 +1,25 @@
+@media (min-width: 0px) {
+  .addon {
+    display:none;
+  }
+}
 
+@media(min-width:468px) {
+  .addon {
+    position:absolute;
+    padding-left:40%;
+    margin-top:26px;
+    margin-right:1px;
+    display:block;
+  }
+}
 h1 {
-  margin-bottom: 15px;
   color:#4d4d4d;
   font-family: 'Roboto', sans-serif;
 }
 
 input[type="text"] {
-  width: 300px;
+  width: 44%;
   height:40px;
   float: left;
   font-family: 'Roboto', sans-serif;
@@ -15,12 +28,7 @@ input[type="text"] {
 .contain-input{
   position:relative;
 }
-.addon {
-  position:absolute;
-  padding-left:275px;
-  margin-top:26px;
 
-}
 .narrow-button {
   float: left;
   margin-left: 10px;
@@ -55,12 +63,19 @@ input[type="text"] {
   font-family: 'Roboto', sans-serif;
   color: #4d4d4d;
 }
-
+.narrow-button {
+  width: 45%;
+}
 button {
   font-family: 'Roboto', sans-serif;
   height:40px;
 }
 
+.navbar-brand {
+  height: auto;
+  font-size: 1.75em;
+  line-height: 1.75em;
+}
 /* Loader Styles */
 .loading-spinner {
   position : absolute;
