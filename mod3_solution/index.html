@@ -7,7 +7,12 @@
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/angular.min.js"></script>
+    <script src = "app/loader/loader.directive.js"></script>
+    <script src = "app/foundItems/founditems.directive.js"></script>
+    <script src = "app/menusearch.service.js"></script>
+    <script src = "app/narrowitdown.controller.js"></script>
     <script src="app/app.js"></script>
+
   </head>
   <body>
     <div class ="container" ng-controller = "NarrowItDownController as narrowDown">
@@ -26,7 +31,7 @@
     </div>
       <div class = "row">
       </div>
-      <loader  ng-show= "narrowDown.loading" ></loader>
+      <loader ng-show= "narrowDown.loading"></loader>
       <found-items
         ng-show = "!narrowDown.loading"
         found = "narrowDown.found"
