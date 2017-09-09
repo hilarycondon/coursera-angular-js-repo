@@ -22,7 +22,10 @@
           </h1>
         </header>
       <div class = "form-group">
-        <input type = "text" placeholder = "Enter term to search menu" class = "form-control" ng-model ="narrowDown.searchTerm">
+        <span class = "contain-input">
+          <span class = "addon glyphicon glyphicon-search"></span>
+          <input type = "text" placeholder = "Enter term to search menu" class = "form-control" ng-model ="narrowDown.searchTerm">
+        </span>
       </div>
       <div class = "form-group narrow-button">
         <button class ="btn btn-info" ng-click = "narrowDown.narrowItems();">

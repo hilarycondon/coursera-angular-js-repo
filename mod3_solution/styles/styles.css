@@ -6,10 +6,20 @@ h1 {
 }
 
 input[type="text"] {
-  width: 200px;
+  width: 300px;
+  height:40px;
   float: left;
   font-family: 'Roboto', sans-serif;
   margin-top:15px;
+}
+.contain-input{
+  position:relative;
+}
+.addon {
+  position:absolute;
+  padding-left:275px;
+  margin-top:26px;
+
 }
 .narrow-button {
   float: left;
@@ -48,6 +58,7 @@ input[type="text"] {
 
 button {
   font-family: 'Roboto', sans-serif;
+  height:40px;
 }
 
 /* Loader Styles */
