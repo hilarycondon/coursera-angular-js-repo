@@ -1,0 +1,22 @@
+<header id = "itemHeader">
+    <nav>
+      <ul>
+        <li><a ui-sref="home">HOME</a></li>
+        <li> <a ui-sref ="categories">MENU CATEGORIES</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section class="parallax" id="cat-item-header">
+  <h2 class="hero_header">{{menuItemsCtrl.category.name}}</h2>
+  <p class="tagline">Menu Items</p>
+</section>
+<!-- <h2>  </h2> -->
+<div class="gallery col-lg-12 col-md-12 col-sm-12">
+<div class="thumbnail col-lg-4 col-md-6 col-sm-1" ng-repeat="menuItem in menuItemsCtrl.menuItems">
+    <h4>{{ menuItem.name }}</h4>
+    <p ><span class ="stats" ng-if="menuItem.description !== ''">Description: </span>{{menuItem.description}}</p>
+    <p ng-if = "menuItem.price_small !== null"><span class ="stats">Price: </span>{{menuItem.price_small | currency}} +</p>
+    <p ng-if = "menuItem.price_small === null"><span class ="stats">Price: </span>{{menuItem.price_large | currency}} +</p>
+</div>
+</div>

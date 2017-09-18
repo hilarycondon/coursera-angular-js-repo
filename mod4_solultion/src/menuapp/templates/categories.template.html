@@ -1,0 +1,16 @@
+<header id = "itemHeader">
+    <nav>
+      <ul>
+        <li><a ui-sref="home">HOME</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="parallax" id="cat-item-header">
+    <h2 class="hero_header">Menu Categories</h2>
+    <p class="tagline"></p>
+  </section>
+<div class="gallery col-lg-12 col-md-12 col-sm-12">
+<div class="thumbnail link col-lg-4 col-md-6 col-sm-1"  ng-repeat="menuCategory in categoryList.menuCategories"  ui-sref="items({category: categoryList.menuCategories[$index].short_name})">
+    {{ menuCategory.name }}
+  </div>
+</div>
